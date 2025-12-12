@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flores Eternas Barranquilla</title>
+  <link rel="stylesheet" href="./style/index.css">
+  <script src="./js/index.js"></script>
+  <script src="./js/auth.js"></script>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</head>
+<body>
+
+  <header>
+    <div class="logo-nav">
+      <div class="logo">
+        <a href="./Index.html">
+          <img src="./image/Logo.png" alt="Logo de Flores Eternas">
+        </a>
+      </div>
+
+      <nav>
+        <a href="#catalogo">
+          <img src="./image/casita.png" alt="Icono catálogo">
+          Catálogo
+        </a>
+        <a href="#">
+          <img src="./image/wasa.png" alt="Icono contacto">
+          Contacto
+        </a>
+      </nav>
+    </div>
+
+    <input type="checkbox" id="toggleSearch" class="toggle-search">
+
+    <div class="search-overlay">
+      <div class="search-container">
+        <div class="search-header">
+        <a href="./Index.html">
+        <img src="./image/Logo.png" alt="Logo" class="logo-busqueda"></a>
+          <label for="toggleSearch" class="close-btn">✖</label>
+        </div>
+
+        <div class="search-bar">
+          <input type="text" placeholder="Buscar">
+        </div>
+
+        <div class="search-content">
+          <div class="search-left">
+            <h3>Búsquedas populares</h3>
+            <ul>
+              <li>Flores amarillas</li>
+              <li>Amor y amistad</li>
+              <li>Ramos de graduación</li>
+              <li>Ramos de futbolistas</li>
+              <li>Ramos de princesas</li>
+            </ul>
+          </div>
+
+          <div class="search-right">
+            <h3>Destacados</h3>
+            <div class="search-items">
+              <img src="./image/Flor 1.png" alt="Flor destacada 1">
+              <img src="./image/flor 15.png" alt="Flor destacada 2">
+              <img src="./image/flor 8.png" alt="Flor destacada 3">
+              <img src="./image/flor 16.png" alt="Flor destacada 4">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="acciones">
+      <label for="toggleSearch" class="btn-buscar">
+        <img src="./image/lupa.png" alt="Lupa buscar"> Buscar
+      </label>
+
+      <div class="user">
+        <a href="./login.html">
+          <img src="./image/acceso.png" alt="Acceso de sesión">
+          Iniciar sesión / Regístrate
+        </a>
+      </div>
+
+      <div class="cart">
+        <a href="./carrito.html">
+          <img src="./image/carrito.png" alt="Carrito de compras">
+          Carrito
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="bienvenida">
+      <div class="imagen-bienvenida">
+        <img src="./image/Flor 1.png" alt="Ramo principal">
+      </div>
+
+      <div class="texto-bienvenida">
+        <h1>¡Bienvenidos a Flores Eternas Barranquilla!</h1>
+        <p>
+          Desde octubre de 2023 nos dedicamos a diseñar y elaborar arreglos únicos que combinan creatividad, 
+          calidad y dedicación. Nuestro objetivo es ayudarte a expresar lo que sientes de una manera especial y memorable.
+        </p>
+      </div>
+    </section>
+
+    <section class="productos">
+      <h2>Más populares</h2>
+
+      <div class="contenedor-productos">
+
+        <div class="producto">
+          <div class="imagen-producto">
+            <a href="producto13.html">
+              <img src="./productos img/13.png" alt="Ramo girasol">
+              <button>Comprar</button>
+            </a>
+          </div>
+          <p>Ramo de 10 rosas amarillas y blancas + girasol con papel coreano blanco</p>
+        </div>
+
+        <div class="producto">
+          <div class="imagen-producto">
+            <a href="producto14.html">
+              <img src="./productos img/14.png" alt="Ramo Hello Kitty">
+              <button>Comprar</button>
+            </a>
+          </div>
+          <p>Ramo de 10 rosas rosadas y blancas personalizado de Hello Kitty</p>
+        </div>
+
+        <div class="producto">
+          <div class="imagen-producto">
+            <a href="producto15.html">
+              <img src="./productos img/15.png" alt="Ramo de tulipanes">
+              <button>Comprar</button>
+            </a>
+          </div>
+          <p>Ramo de 6 tulipanes amarillos con nota personalizada</p>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="catalogo" id="catalogo">
+      <h2>Catálogo</h2>
+
+      <div class="catalogo-container">
+
+        <aside class="filtros">
+          <p class="frase">Flores que nunca mueren,<br>sentimientos que nunca se olvidan</p>
+
+          <div class="filtro-bloque">
+            <h3>Filtro</h3> 
+            <label><strong>Tipo</strong></label><br>
+            <label><input type="checkbox" value="individuales"> Individuales</label><br>
+            <label><input type="checkbox" value="ramos"> Ramos</label><br>
+            <label><input type="checkbox" value="rosas"> Rosas</label><br>
+            <label><input type="checkbox" value="girasoles"> Girasoles</label><br>
+            <label><strong>Colores</strong></label><br>
+            <label><input type="checkbox" value="blancas"> Blancas</label><br>
+            <label><input type="checkbox" value="amarillas"> Amarillas</label><br>
+            <label><input type="checkbox" value="moradas"> Moradas</label><br>
+            <label><input type="checkbox" value="rojas"> Rojas</label><br>
+            <label><input type="checkbox" value="verdes"> Verdes</label><br>
+            <label><input type="checkbox" value="rosadas"> Rosadas</label><br>
+            <label><input type="checkbox" value="azules"> Azules</label>
+          </div>
+
+          <div class="filtro-bloque">
+            <h3>Precio</h3>
+            <label><input type="checkbox" value="15-30"> $15.000 - $30.000</label><br>
+            <label><input type="checkbox" value="30-60"> $30.000 - $60.000</label><br>
+            <label><input type="checkbox" value="60-110"> $60.000 - $110.000</label><br>
+            <label><input type="checkbox" value="110+"> $110.000 +</label>
+          </div>
+        </aside>
+
+        <div class="catalogo-contenido">
+
+          <div class="categorias">
+            <button class="activo" data-filtro="todos">Todos</button>
+            <button data-filtro="mayor-a-menor">De mayor a menor</button>
+            <button data-filtro="menor-a-mayor">De menor a mayor</button>
+          </div>
+
+          <div class="productos-catalogo">
+
+            <div class="producto-catalogo" data-etiquetas="Rosas,Amarillas,Individuales" data-precio="16000">
+              <a href="producto47.html"><img src="./productos img/47.png" alt="Rosa individual"></a>
+              <p>Rosa individual</p>
+              <span>COP 16,000.00</span>
+            </div>
+
+            <div class="producto-catalogo" data-etiquetas="Azules,Individuales,Rosas" data-precio="16000">
+              <a href="producto46.html"><img src="./productos img/46.png" alt="Rosa individual"></a>
+              <p>Rosa individual</p>
+              <span>COP 16,000.00</span>
+            </div>
+
+            <div class="producto-catalogo" data-etiquetas="Moradas,Individuales,Rosas" data-precio="16000">
+              <a href="producto45.html"><img src="./productos img/45.png" alt="Rosa individual"></a>
+              <p>Rosa individual</p>
+              <span>COP 16,000.00</span>
+            </div>
+
+            <div class="producto-catalogo" data-etiquetas="Rosadas,Individuales,Rosas" data-precio="16000">
+              <a href="producto44.html"><img src="./productos img/44.png" alt="Rosa individual"></a>
+              <p>Rosa individual</p>
+              <span>COP 16,000.00</span>
+            </div>
+
+            <div class="producto-catalogo" data-etiquetas="Rojas,Individuales,Rosas" data-precio="16000">
+              <a href="producto43.html"><img src="./productos img/43.png" alt="Rosa individual"></a>
+              <p>Rosa individual</p>
+              <span>COP 16,000.00</span>
+            </div>
+
+            <div class="producto-catalogo" data-etiquetas="Rojas,Individuales,Rosas" data-precio="14000">
+              <a href="producto42.html"><img src="./productos img/42.png" alt="Rosa individual"></a>
+              <p>Rosa individual</p>
+              <span>COP 14,000.00</span>
+            </div>
+
+            <div class="producto-catalogo" data-etiquetas="Amarillas,Individuales,Rosas" data-precio="14000">
+              <a href="producto41.html"><img src="./productos img/41.png" alt="Rosa individual"></a>
+              <p>Rosa individual</p>
+              <span>COP 14,000.00</span>
+            </div>
+
+            <div class="producto-catalogo" data-etiquetas="Rosadas,Individuales,Rosas" data-precio="14000">
+              <a href="producto40.html"><img src="./productos img/40.png" alt="Rosa individual"></a>
+              <p>Rosa individual</p>
+              <span>COP 14,000.00</span>
+            </div>
+
+            <div class="producto-catalogo" data-etiquetas="Rojas,Individuales,Rosas" data-precio="14000">
+              <a href="producto39.html"><img src="./productos img/39.png" alt="Rosa individual"></a>
+              <p>Rosa individual</p>
+              <span>COP 14,000.00</span>
+            </div>
+
+            <div class="producto-catalogo" data-etiquetas="Girasoles,Amarillas,Ramos" data-precio="120000">
+              <a href="producto23.html"><img src="./productos img/23.png" alt="Ramo de 6 girasoles"></a>
+              <p>Ramo de 6 girasoles</p>
+              <span>COP 120,000.00</span>
+            </div>
+
+            <div class="producto-catalogo" data-etiquetas="Girasoles,Amarillas,Ramos,Moradas" data-precio="85000">
+              <a href="producto22.html"><img src="./productos img/22.png" alt="Girasol + 10 rosas"></a>
+              <p>Girasol + 10 rosas</p>
+              <span>COP 85,000.00</span>
+            </div>
+
+            <div class="producto-catalogo" data-etiquetas="Rosas,Amarillas,Ramos,Blancas" data-precio="80000">
+              <a href="producto21.html"><img src="./productos img/21.png" alt="Ramo de 18 rosas"></a>
+              <p>Ramo de 18 rosas</p>
+              <span>COP 80,000.00</span>
+            </div>
+
+            <div class="producto-catalogo" data-etiquetas="Rosas,Amarillas,Ramos" data-precio="70000">
+              <a href="producto20.html"><img src="./productos img/20.png" alt="Ramito de Winnie Pooh"></a>
+              <p>Ramito de Winnie Pooh</p>
+              <span>COP 70,000.00</span>
+            </div>
+
+            <div class="producto-catalogo" data-etiquetas="Rosas,Amarillas,Ramos,Blancas" data-precio="62000">
+              <a href="producto19.html"><img src="./productos img/19.png" alt="Ramo de 11 rosas"></a>
+              <p>Ramo de 11 rosas</p>
+              <span>COP 62,000.00</span>
+            </div>
+
+            <div class="producto-catalogo" data-etiquetas="Rosas,Amarillas,Ramos" data-precio="60000">
+              <a href="producto18.html"><img src="./productos img/18.png" alt="Ramo de 10 rosas"></a>
+              <p>Ramo de 10 rosas</p>
+              <span>COP 60,000.00</span>
+            </div>
+
+            <div class="producto-catalogo" data-etiquetas="Rosas,Amarillas,Blancas,Ramos" data-precio="46000">
+              <a href="producto17.html"><img src="./productos img/17.png" alt="Ramo de 7 rosas"></a>
+              <p>Ramo de 7 rosas</p>
+              <span>COP 46,000.00</span>
+            </div>
+
+            <div class="producto-catalogo" data-etiquetas="Rosas,Amarillas,Verdes,Ramos" data-precio="46000">
+              <a href="producto16.html"><img src="./productos img/16.png" alt="Ramo de Tinkerbell"></a>
+              <p>Ramo de Tinkerbell</p>
+              <span>COP 46,000.00</span>
+            </div>
+
+            <div class="producto-catalogo" data-etiquetas="Girasoles,Amarillas,Ramos" data-precio="40000">
+              <a href="producto15.html"><img src="./productos img/15.png" alt="Ramo de 2 girasoles"></a>
+              <p>Ramo de 2 girasoles</p>
+              <span>COP 40,000.00</span>
+            </div>
+
+            <div class="producto-catalogo" data-etiquetas="Girasoles,Amarillas,Individuales" data-precio="36000">
+              <a href="producto14.html"><img src="./productos img/14.png" alt="Ramo de Van Gogh"></a>
+              <p>Ramo de Van Gogh</p>
+              <span>COP 36,000.00</span>
+            </div>
+
+            <div class="producto-catalogo" data-etiquetas="Girasoles,Amarillas,Ramos" data-precio="28000">
+              <a href="producto13.html"><img src="./productos img/13.png" alt="Mini ramito"></a>
+              <p>Mini ramito</p>
+              <span>COP 28,000.00</span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+<footer class="bg-dark text-white mt-5 p-3 text-center">
+  <p>© 2025 Mi E-Commerce — Todos los derechos reservados</p>
+</footer>
+
+</body>
+</html>
+
+

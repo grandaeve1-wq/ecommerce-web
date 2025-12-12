@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registrar</title>
+  <link rel="stylesheet" href="./style/login.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</head>
+<body>
+
+ <header>
+    <div class="logo-nav">
+      <div class="logo">
+        <a href="./Index.html">
+        <img src="./image/Logo.png" alt="Logo de Flores Eternas"></a>
+      </div>
+
+      <nav>
+        <a href="./Index.html#catalogo">
+          <img src="./image/casita.png" alt="Icono catalogo">
+          Catalogo
+        </a>
+        <a href="#">
+          <img src="./image/wasa.png" alt="Icono contacto">
+          Contacto
+        </a>
+      </nav>
+    </div>
+
+<input type="checkbox" id="toggleSearch" class="toggle-search">
+
+
+    <div class="search-overlay">
+      <div class="search-container">
+
+        <div class="search-header">
+          <a href="./Index.html">
+          <img src="./image/Logo.png" alt="Logo" class="logo-busqueda"></a>
+          <label for="toggleSearch" class="close-btn">✖</label>
+        </div>
+
+        <div class="search-bar">
+          <input type="text" placeholder="Buscar">
+        </div>
+
+        <div class="search-content">
+          <div class="search-left">
+            <h3>Búsquedas populares</h3>
+            <ul>
+              <li>Flores amarillas</li>
+              <li>Amor y amistad</li>
+              <li>Ramos de graduación</li>
+              <li>Ramos de futbolistas</li>
+              <li>Ramos de princesas</li>
+            </ul>
+          </div>
+
+          <div class="search-right">
+            <h3>Destacados</h3>
+            <div class="search-items">
+              <img src="./image/Flor 1.png" alt="Flor destacada 1">
+              <img src="./image/flor 15.png" alt="Flor destacada 2">
+              <img src="./image/flor 8.png" alt="Flor destacada 3">
+              <img src="./image/flor 16.png" alt="Flor destacada 4">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+   <div class="acciones">
+  <label for="toggleSearch" class="btn-buscar">
+    <img src="./image/lupa.png" alt="Lupa buscar">
+     Buscar</label>
+  <div class="user">  
+    <a href="login.html">
+      <img src="./image/acceso.png" alt="Acceso de sesion">
+      Iniciar sesión / Regístrate</a>
+  </div>
+  <div class="cart">
+    <a href="#">
+      <img src="./image/carrito.png" alt="Carrito de compras">
+    Carrito
+    </a>
+  </div>
+</div>
+
+
+  </header>
+
+  <main class="contenedor-login">
+    <form class="formulario">
+      <h2>Creando cuenta</h2>
+
+      <input id="reg-username" type="text" placeholder="Usuario" required>
+      <div class="field-error" id="error-username" aria-live="polite"></div>
+
+      <input id="reg-identifier" type="text" placeholder="Teléfono o correo" required>
+      <div class="field-error" id="error-identifier" aria-live="polite"></div>
+
+      <input id="reg-password" type="password" placeholder="Contraseña" required>
+      <div class="field-error" id="error-password" aria-live="polite"></div>
+
+      <div id="reg-message" class="login-message" aria-live="polite"></div>
+
+      <button type="button" id="btn-crear" class="btn-iniciar">Crear cuenta</button>
+
+      <div class="separador">
+        <span></span>
+        <p>o</p>
+        <span></span>
+      </div>
+
+      <button type="button" class="btn-google">
+        <img src="./image/google.png" alt="Google">
+        Inicia sesión con Google
+      </button>
+
+      <div class="registrar">
+        <p>¿Tienes una cuenta? <a href="login.html">Inicia Sesion</a></p>
+      </div>
+    </form>
+  </main>
+<script src="./js/register.js"></script>
+<script src="./js/auth.js"></script>
+<script src="./js/index.js"></script></body>
+
+</body>
+</html>
+
+

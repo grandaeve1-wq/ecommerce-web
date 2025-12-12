@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rosa Individual</title>
+  <link rel="stylesheet" href="./style/productos.css">
+</head>
+<body>
+<header>
+  <div class="logo-nav">
+    <div class="logo">
+      <a href="./Index.html">
+        <img src="./image/Logo.png" alt="Logo de Flores Eternas">
+      </a>
+    </div>
+
+    <nav>
+      <a href="./Index.html#catalogo">
+        <img src="./image/casita.png" alt="Icono catalogo">
+        Cat?logo
+      </a>
+      <a href="#">
+        <img src="./image/wasa.png" alt="Icono contacto">
+        Contacto
+      </a>
+    </nav>
+  </div>
+
+  <input type="checkbox" id="toggleSearch" class="toggle-search">
+
+  <div class="search-overlay">
+    <div class="search-container">
+      <div class="search-header">
+        <a href="./Index.html">
+        <img src="./image/Logo.png" alt="Logo" class="logo-busqueda"></a>
+        <label for="toggleSearch" class="close-btn">?</label>
+      </div>
+
+      <div class="search-bar">
+        <input type="text" placeholder="Buscar">
+      </div>
+
+      <div class="search-content">
+        <div class="search-left">
+          <h3>B?squedas populares</h3>
+          <ul>
+            <li>Flores amarillas</li>
+            <li>Amor y amistad</li>
+            <li>Ramos de graduaci?n</li>
+            <li>Ramos de futbolistas</li>
+            <li>Ramos de princesas</li>
+          </ul>
+        </div>
+
+        <div class="search-right">
+          <h3>Destacados</h3>
+          <div class="search-items">
+            <img src="./image/Flor 1.png" alt="Flor destacada 1">
+            <img src="./image/flor 15.png" alt="Flor destacada 2">
+            <img src="./image/flor 8.png" alt="Flor destacada 3">
+            <img src="./image/flor 16.png" alt="Flor destacada 4">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="acciones">
+    <label for="toggleSearch" class="btn-buscar">
+      <img src="./image/lupa.png" alt="Lupa buscar">
+      Buscar
+    </label>
+    <div class="user">
+      <a href="login.html">
+        <img src="./image/acceso.png" alt="Acceso de sesion">
+        Iniciar sesi?n / Reg?strate
+      </a>
+    </div>
+    <div class="cart">
+      <a href="carrito.html">
+        <img src="./image/carrito.png" alt="Carrito de compras">
+        Carrito
+      </a>
+    </div>
+  </div>
+</header>
+
+<section class="producto">
+  <img src="./productos img/44.png" alt="Rosa Individual">
+  
+  <div class="info-producto">
+    <h2>Rosa Individual</h2>
+    <p>Hermoso Rosa Individual, con papel morado y manchas blancas</p>
+    <p><strong>Categor?a:</strong> Rosa, Individual, Morada</p>
+    <p class="precio">$16,000 COP</p>
+    <button class="btn-carrito">Agregar al carrito</button>
+  </div>
+</section>
+
+
+
+
+<div class="opiniones-lista">
+  <h2>Opiniones de clientes</h2>
+  <div id="lista-opiniones">
+  </div>
+</div>
+
+<div class="formulario-comentario">
+  <h2>Agrega tu comentario</h2>
+  <form id="formComentario">
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" required>
+    <label for="calificacion">Calificacion (1 a 5):</label>
+    <select id="calificacion" required>
+      <option value="1">1 ⭐</option>
+      <option value="2">2 ⭐⭐</option>
+      <option value="3">3 ⭐⭐⭐</option>
+      <option value="4">4 ⭐⭐⭐⭐</option>
+      <option value="5">5 ⭐⭐⭐⭐⭐</option>
+    </select>
+    <label for="comentario">Comentario:</label>
+    <textarea id="comentario" required></textarea>
+    <label for="foto">Foto (opcional):</label>
+    <input type="file" id="foto" accept="image/*">
+    <button type="submit">Enviar comentario</button>
+  </form>
+</div>
+
+<script type="module" src="./js/comentarios.js"></script>
+<script src="./js/index.js"></script>
+<script type="module" src="./js/carrito.js"></script>
+</body>
+</html>
+
+
